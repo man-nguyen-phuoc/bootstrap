@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout bootstrap</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="../columns.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row align-items-start">
+            <div class="col">one of three columns</div>
+            <div class="col">one of three columns</div>
+            <div class="col">one of three columns</div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col">one of three columns</div>
+            <div class="col">one of three columns</div>
+            <div class="col">one of three columns</div>
+        </div>
+        <div class="row align-items-end">
+            <div class="col">one three columns</div>
+            <div class="col">one of three columns</div>
+            <div class="col">one of three columns</div>
+        </div>
+    </div>
+
+    <h4>align-self-*</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-start">one of three columns</div>
+            <div class="col align-self-center">one of three columns</div>
+            <div class="col align-self-end">one of three columns</div>
+        </div>
+    </div>
+
+    <h4>harizontal alignment</h4>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+        </div>
+
+        <div class="row justify-content-end">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+        </div>
+
+        <div class="row justify-content-around">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+        </div>
+
+        <div class="row justify-content-between">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-4">content col-4</div>
+            <div class="col-4">content col-4</div>
+        </div>
+    </div>
+
+    <h4>column wrapping</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-9">.Col-9</div>
+            <div class="col-4">.Col-4</div>
+            <div class="col-6">.Col-6</div>
+        </div>
+    </div>
+
+    <h4>column breaks</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+
+            <div class="w-100"></div>
+
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+            <div class="col-6 col-sm-3">.col-6 .col-sm-3</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      
+          <!-- Force next columns to break to new line at md breakpoint and up -->
+          <div class="w-100 d-none d-md-block"></div>
+      
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        </div>
+    </div>
+    
+    <h4>order classes</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                first in DOM, no order applied
+            </div>
+            <div class="col order-5">
+                second in DOM, with a larger order
+            </div>
+            <div class="col order-1">
+                third in DOM, with an oeder of 1
+            </div>
+        </div>
+    </div>
+
+    <h4>order-first and oeder-last</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col order-last">
+                First in DOM, order last
+            </div>
+            <div class="col">
+                Second in DOM, unordered
+            </div>
+            <div class="col order-first">
+                third in DOM, order first
+            </div>
+        </div>
+    </div>
+
+    <h4>offsetting columns</h4>
+    <div class="container">
+        <div class="row change-row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+    </div>
+
+    <div class="row change-row">
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+    </div>
+
+    <div class="row change-row">
+        <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+    </div>
+
+    <div class="container">
+        <div class="row change-row">
+            <div class="col-sm-5 col-md-6">
+                .col-sm-5 .col-md-6
+            </div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row change-row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+        </div>
+        <div class="row change-row">
+            <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+            <div class="col-md-3 ms-md-auto">.col-md-3 .ms-md-auto</div>
+        </div>
+    </div>
+    <div class="row change-row">
+        <div class="col-auto me-auto">.col-auto .me-auto</div>
+        <div class="col-auto">.col-auto</div>
+    </div>
+
+</body>
+</html>

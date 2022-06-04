@@ -1,0 +1,20 @@
+.row {
+    margin-bottom: 10px;
+    min-height: 10rem;
+}
+
+.justify-content-start, .justify-content-center, .justify-content-end
+,.justify-content-around, .justify-content-between, .justify-content-evenly {
+    min-height: 0px;
+}
+
+.col, .col-4, .col-9, .col-6, .col-md-4, .col-md-3, .col-md-6, .col-auto { 
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border: 1px solid rgba(39,41,43,0.1); 
+    background-color: rgba(255,0,0,0.1);
+}
+
+.change-row {
+    min-height: 0px;
+}
